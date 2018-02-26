@@ -27,8 +27,13 @@ import com.watabou.utils.PointF;
 
 public class DungeonTilemap extends Tilemap {
 
-	public static final int SIZE = 16;
-	
+	//  Replaced with higher resolutions 2016-04-24
+//	public static final int SIZE = 16;
+//
+	public static final int SIZE = 32;
+// <--
+
+
 	private static DungeonTilemap instance;
 	
 	public DungeonTilemap() {

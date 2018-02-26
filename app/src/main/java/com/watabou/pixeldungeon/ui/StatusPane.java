@@ -86,6 +86,11 @@ public class StatusPane extends Component {
 		add( btnMenu );
 		
 		avatar = HeroSprite.avatar( Dungeon.hero.heroClass, lastTier );
+		// Modified to shrink avatar size
+		avatar.scale.x = 0.5f;
+		avatar.scale.y = 0.5f;
+		// <--
+
 		add( avatar );
 		
 		blood = new BitmaskEmitter( avatar );
@@ -136,12 +141,20 @@ public class StatusPane extends Component {
 		height = 32;
 		
 		shield.size( width, shield.height );
-		
-		avatar.x = PixelScene.align( camera(), shield.x + 15 - avatar.width / 2 );
-		avatar.y = PixelScene.align( camera(), shield.y + 16 - avatar.height / 2 );
-		
-		compass.x = avatar.x + avatar.width / 2 - compass.origin.x;
-		compass.y = avatar.y + avatar.height / 2 - compass.origin.y;
+
+//  Replaced with higher resolutions 2016-04-24
+//		avatar.x = PixelScene.align( camera(), shield.x + 15 - avatar.width / 2 );
+//		avatar.y = PixelScene.align( camera(), shield.y + 16 - avatar.height / 2 );
+//
+//		compass.x = avatar.x + avatar.width / 2 - compass.origin.x;
+//		compass.y = avatar.y + avatar.height / 2 - compass.origin.y;
+//
+		avatar.x = PixelScene.align( camera(), shield.x + 15 - avatar.width * .25f  );
+		avatar.y = PixelScene.align( camera(), shield.y + 16 - avatar.height * .25f );
+
+		compass.x = avatar.x + avatar.width * .25f - compass.origin.x;
+		compass.y = avatar.y + avatar.height * .25f - compass.origin.y;
+// <--
 		
 		hp.x = 30;
 		hp.y = 3;

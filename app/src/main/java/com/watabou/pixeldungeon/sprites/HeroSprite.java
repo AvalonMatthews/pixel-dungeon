@@ -31,9 +31,14 @@ import com.watabou.pixeldungeon.actors.hero.HeroClass;
 import com.watabou.utils.Callback;
 
 public class HeroSprite extends CharSprite {
-	
-	private static final int FRAME_WIDTH	= 12;
-	private static final int FRAME_HEIGHT	= 15;
+
+	//  Replaced with higher resolutions 2016-04-24
+//	private static final int FRAME_WIDTH	= 12;
+//	private static final int FRAME_HEIGHT	= 15;
+//
+	private static final int FRAME_WIDTH	= 18;
+	private static final int FRAME_HEIGHT	= 31;
+// <--
 	
 	private static final int RUN_FRAMERATE	= 20;
 	

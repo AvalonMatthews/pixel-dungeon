@@ -198,8 +198,13 @@ public class SewerLevel extends RegularLevel {
 		
 		public WaterParticle() {
 			super();
-			
-			acc.y = 50;
+
+			// Modified acc.y to reflect increase tile size (x2)
+			//
+//			acc.y = 50;
+			acc.y = 100;
+			//<--
+
 			am = 0.5f;
 			
 			color( ColorMath.random( 0xb6ccc2, 0x3b6653 ) );

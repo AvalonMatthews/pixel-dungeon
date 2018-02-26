@@ -35,14 +35,15 @@ import com.watabou.pixeldungeon.ui.Window;
 
 public class AboutScene extends PixelScene {
 
-	private static final String TXT = 
-		"Code & graphics: Watabou\n" +
-		"Music: Cube_Code\n\n" + 
-		"This game is inspired by Brian Walker's Brogue. " +
-		"Try it on Windows, Mac OS or Linux - it's awesome! ;)\n\n" +
-		"Please visit official website for additional info:";
+	private static final String TXT =
+			"Dungeon x2 was built upon\n" +
+					"Code & graphics: Watabou\n" +
+					"Music: Cube_Code\n\n" +
+					"This game is inspired by Brian Walker's Brogue. " +
+					"Try it on Windows, Mac OS or Linux - it's awesome! ;)\n\n" +
+					"Please visit official website for additional info:";
 	
-	private static final String LNK = "pixeldungeon.watabou.ru";
+	private static final String LNK = "temenoi.com";
 	
 	@Override
 	public void create() {
